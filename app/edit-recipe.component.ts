@@ -12,11 +12,11 @@ import { Recipe } from './recipe.model';
         <h3>Edit Recipe</h3>
         <label>Enter Recipe Title:</label>
         <input [(ngModel)]="childSelectedRecipe.title">
-        <label>Select Recipe Priority (1-3):</label>
+        <label>Select Recipe Rating (1-3):</label>
         <br>
-        <input type="radio" [(ngModel)]="childSelectedRecipe.priority" [value]="1">1 (Low Priority)<br>
-        <input type="radio" [(ngModel)]="childSelectedRecipe.priority" [value]="2">2 (Medium Priority)<br>
-        <input type="radio" [(ngModel)]="childSelectedRecipe.priority" [value]="3">3 (High Priority)
+        <input type="radio" [(ngModel)]="childSelectedRecipe.rating" [value]="1">1<br>
+        <input type="radio" [(ngModel)]="childSelectedRecipe.rating" [value]="2">2<br>
+        <input type="radio" [(ngModel)]="childSelectedRecipe.rating" [value]="3">3
         <button (click)="doneButtonClicked()">Done</button>
       </div>
     </div>
