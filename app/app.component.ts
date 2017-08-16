@@ -25,7 +25,7 @@ export class AppComponent {
   month: number = this.currentTime.getMonth() + 1;
   day: number = this.currentTime.getDate();
   year: number = this.currentTime.getFullYear();
-  selectedRecipe: null;
+  selectedRecipe = null;
 
   masterRecipeList: Recipe[] = [
     new Recipe('Mushroom cheese dosa', 3),
